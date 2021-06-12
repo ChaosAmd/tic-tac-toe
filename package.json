@@ -2,10 +2,24 @@
   "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "Minimal tic-tac-toe with ts and AI",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "jest --runInBand --no-cache --coverage --detectOpenHandles",
+    "lint": "eslint . --ext .ts"
   },
   "author": "Amadeus Dabela Lanoa",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2",
+    "webpack-cli": "^4.7.2"
+  }
 }
